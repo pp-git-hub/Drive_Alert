@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Video Feed</title>
+    <script>
+        setInterval(function(){
+            document.getElementById('lv').src = '/video_feed?' + new Date().getTime();
+        }, 50); // Refresh every 50 milliseconds (adjust as needed)
+    </script>
+</head>
+<body>
+   <h1>Live Hand Tracking Video by Pranjal</h1>
+   <img src = "/video_feed" id = "lv" alt = "Live Video Feed">
+</body>
+</html>
